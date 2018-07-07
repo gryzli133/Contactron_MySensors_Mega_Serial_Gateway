@@ -104,6 +104,7 @@ class Contactron
   {
     send(msg.set(value==contactronON ? 1 : 0));
     last_update = millis();
+    oldValue = value;
   }
   
   void Present()
